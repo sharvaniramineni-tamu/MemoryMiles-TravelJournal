@@ -1,0 +1,81 @@
+/* AuthPageStyles.css */
+
+/* Apply a full-screen background image */
+.auth-background {
+background: url('back1.jpeg') no-repeat center center;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+padding: 1rem;
+}
+
+/* Centered form container with semi-transparent backdrop */
+.auth-container {
+background: rgba(255, 255, 255, 0.85);
+border-radius: 12px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+max-width: 400px;
+width: 100%;
+padding: 2rem;
+}
+
+/* Headings inside auth form */
+.auth-container h1 {
+font-family: 'Playfair Display', serif;
+font-size: 1.8rem;
+margin-bottom: 1rem;
+text-align: center;
+color: var(--color-primary);
+}
+
+/* Form fields styling */
+.auth-container .txt_field input,
+.auth-container input,
+.auth-container textarea {
+width: 100%;
+padding: 0.75rem;
+margin-bottom: 1rem;
+border: 1px solid var(--color-border);
+border-radius: 8px;
+background: #fff;
+}
+
+/* Buttons styling */
+.auth-container .button,
+.auth-container .login_button .button {
+width: 100%;
+padding: 0.75rem;
+background: var(--color-secondary);
+color: #fff;
+border: none;
+border-radius: 8px;
+font-size: 1rem;
+cursor: pointer;
+transition: background 0.2s ease;
+}
+.auth-container .button:hover {
+background: var(--color-accent);
+}
+
+/* Signup link styling */
+.auth-container .signup_link {
+text-align: center;
+margin-top: 1rem;
+}
+.auth-container .signup_link a {
+color: var(--color-primary);
+font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+.auth-container {
+padding: 1.5rem;
+}
+.auth-container h1 {
+font-size: 1.5rem;
+}
+}
+
